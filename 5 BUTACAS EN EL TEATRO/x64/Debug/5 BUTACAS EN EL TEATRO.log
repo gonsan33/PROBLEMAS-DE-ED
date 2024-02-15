@@ -1,0 +1,6 @@
+﻿  5.cpp
+E:\PROBLEMAS DE ED\5 BUTACAS EN EL TEATRO\5.cpp(48,14): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+E:\PROBLEMAS DE ED\5 BUTACAS EN EL TEATRO\5.cpp(59,46): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+E:\PROBLEMAS DE ED\5 BUTACAS EN EL TEATRO\5.cpp(75,35): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+E:\PROBLEMAS DE ED\5 BUTACAS EN EL TEATRO\5.cpp(57): warning C4715: 'Teatro::nueva_reserva': no todas las rutas de acceso de control devuelven un valor
+  5 BUTACAS EN EL TEATRO.vcxproj -> E:\PROBLEMAS DE ED\5 BUTACAS EN EL TEATRO\x64\Debug\5 BUTACAS EN EL TEATRO.exe
