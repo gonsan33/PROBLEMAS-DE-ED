@@ -1,4 +1,4 @@
-﻿/*
+/*
  * ---------------------------------------------------
  *                ESTRUCTURAS DE DATOS
  * ---------------------------------------------------
@@ -139,6 +139,8 @@ private:
     Node* nth_node(int n) const;
     void delete_nodes();
     void copy_nodes_from(const ListLinkedDouble& other);
+    void ListLinkedDouble::dettach(Node* node); 
+    void ListLinkedDouble::attach(Node* node, Node* position); 
 };
 
 ListLinkedDouble::Node* ListLinkedDouble::nth_node(int n) const {
@@ -210,7 +212,7 @@ void  ListLinkedDouble::swap2by2() {
         current = current->next;
     }
 }
-
+/*
 void ListLinkedDouble::zip(ListLinkedDouble& other) { //O(n+m) con n el tamaño de la lista this, m el tamaño de other
     int i = 0, j = 0; 
     Node* current = this->head->next;  
@@ -248,6 +250,40 @@ void ListLinkedDouble::zip(ListLinkedDouble& other) { //O(n+m) con n el tamaño 
     other.head->next = other.head; 
     other.head->prev = other.head; 
 
+    this->num_elems += other.num_elems; 
+    other.num_elems = 0; 
+
+
+}
+*/
+
+void ListLinkedDouble::dettach(Node* node) {
+    node->prev->next = node->next;
+    node->next->prev = node->prev;
+}
+
+void ListLinkedDouble::attach(Node* node, Node* position) {
+    node->prev = position->prev;
+    node->next = position;
+    position->prev->next = node;
+    position->prev = node;
+}
+
+void ListLinkedDouble::zip(ListLinkedDouble& other) { //O(n+m) con n el tamaño de la lista this, m el tamaño de other
+    Node *current = this->head->next->next; 
+    Node* current_other = other.head->next; 
+    while(current != head && current_other != head) {
+        Node*siguiente = current->next; 
+        Node*siguiente_other = current_other->next; 
+        attach(current_other, current); 
+        current = siguiente; 
+        current_other = siguiente_other;         
+    }
+    other.head->next = other.head; 
+    other.head->prev = other.head; 
+
+    this->num_elems += other.num_elems; 
+    other.num_elems = 0; 
 }
 
 void resuelveCasos() {
