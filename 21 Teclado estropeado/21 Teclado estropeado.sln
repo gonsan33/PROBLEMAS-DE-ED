@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21 Teclado estropeado", "21 Teclado estropeado.vcxproj", "{B775323E-13C2-4DD7-8B73-C0780F790E6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B775323E-13C2-4DD7-8B73-C0780F790E6A}.Debug|x64.ActiveCfg = Debug|x64
+		{B775323E-13C2-4DD7-8B73-C0780F790E6A}.Debug|x64.Build.0 = Debug|x64
+		{B775323E-13C2-4DD7-8B73-C0780F790E6A}.Debug|x86.ActiveCfg = Debug|Win32
+		{B775323E-13C2-4DD7-8B73-C0780F790E6A}.Debug|x86.Build.0 = Debug|Win32
+		{B775323E-13C2-4DD7-8B73-C0780F790E6A}.Release|x64.ActiveCfg = Release|x64
+		{B775323E-13C2-4DD7-8B73-C0780F790E6A}.Release|x64.Build.0 = Release|x64
+		{B775323E-13C2-4DD7-8B73-C0780F790E6A}.Release|x86.ActiveCfg = Release|Win32
+		{B775323E-13C2-4DD7-8B73-C0780F790E6A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4EB3549-21EE-40BA-B96C-850C6A775CDC}
+	EndGlobalSection
+EndGlobal

@@ -25,10 +25,10 @@ void resolver(const vector<int>& v, int k) {
 	cout << dq.front().first; 
 	for (int j = 0; j < v.size() - k; ++j) {
 		//Miro si tengo que sacar el primer elemento: 
-		if (dq.front().second <= j) dq.pop_front(); 
+		if (!dq.empty()&& dq.front().second <= j) dq.pop_front();
 
 		//Incorporo el nuevo elemento: 
-		if (v[j+k] >= dq.front().first) {
+		if (!dq.empty() && v[j+k] >= dq.front().first) {
 			dq.clear();
 			dq.push_back({ v[j+k], j+k });
 		}
@@ -41,6 +41,7 @@ void resolver(const vector<int>& v, int k) {
 		cout << ' ' << dq.front().first; 
 
 	}
+	cout << '\n'; 
 
 }
 
