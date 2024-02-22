@@ -3,15 +3,15 @@
  *                ESTRUCTURAS DE DATOS
  * ---------------------------------------------------
  *              Manuel Montenegro Montes
- *              Facultad de Informática
+ *              Facultad de Informï¿½tica
  *         Universidad Complutense de Madrid
  * ---------------------------------------------------
  */
 
  /*
-  * Implementación del TAD Lista mediante listas enlazadas dobles.
+  * Implementaciï¿½n del TAD Lista mediante listas enlazadas dobles.
   *
-  * Esta versión incluye la sobrecarga de operadores <<, [] y asignación.
+  * Esta versiï¿½n incluye la sobrecarga de operadores <<, [] y asignaciï¿½n.
   */
 
 #ifndef __LIST_LINKED_DOUBLE_H
@@ -136,6 +136,17 @@ private:
     Node* nth_node(int n) const;
     void delete_nodes();
     void copy_nodes_from(const ListLinkedDouble& other);
+    void dettach(Node* Node) {
+        node->prev->next = node->next; 
+        node->next->prev = node->prev; 
+    }
+
+    void attach(Node* node, Node* position) { //Inserta antes de la posiciÃ³n
+        position->prev->next = node; 
+        node->prev = position->prev; 
+        node->next = position;
+        position->prev = node; 
+    }
 };
 
 ListLinkedDouble::Node* ListLinkedDouble::nth_node(int n) const {
@@ -191,7 +202,12 @@ std::ostream& operator<<(std::ostream& out, const ListLinkedDouble& l) {
     l.display(out);
     return out;
 }
+
+
+
+
 void  ListLinkedDouble::swap2by2() {
+    /*Antigua implementaciÃ³n
     int n = this->num_elems / 2; 
     Node* current = head->next; 
     for (int i = 0; i < n; ++i) {
@@ -205,6 +221,16 @@ void  ListLinkedDouble::swap2by2() {
 
         //Avanzar: 
         current = current->next; 
+    }
+    */
+
+    //Nueva implementaciÃ³n: 
+    Node* current = head->next; 
+    while(current!= head && current->next != head) {
+        Node*sale = current->next; 
+        dettach(sale); 
+        attach(sale, current); 
+        current= current->next;
     }
 }
 
