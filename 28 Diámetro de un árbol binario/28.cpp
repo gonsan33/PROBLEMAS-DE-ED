@@ -96,13 +96,13 @@ std::istream& operator>>(std::istream& op, BinTree<T>& tree) {
 
 
 template <typename T> 
-//first lleva el camino más largo que acaba en la raíz, second el diámetro del árbol
+//first lleva la altura, second el diámetro del árbol
 pair<int, int> diametro(const BinTree<T>& tree) {
     if (tree.empty()) return { 0,0 }; 
     else {
         auto izq = diametro(tree.left()); 
         auto dcha = diametro(tree.right()); 
-        return { max(izq.first, dcha.first) + 1, max(max(izq.second, dcha.second),max(izq.first, dcha.first)+1) };
+        return { max(izq.first, dcha.first) + 1, max(izq.first + dcha.first +1, max(izq.second, dcha.second))};
     }
 }
 

@@ -136,13 +136,12 @@ pair<int, int> excursionistas(const BinTree<T>& tree) {
     else {
         pair<int,int> izq = excursionistas(tree.left());
         pair<int, int> dcha = excursionistas(tree.right());
-
-        return { izq.first + dcha.first + (izq.first == 0 && dcha.first && tree.root() != 0 == 0 ? 1 : 0), max(izq.second , dcha.second) + tree.root() }; 
+        return { izq.first + dcha.first + (izq.first == 0 && dcha.first == 0&& tree.root() != 0 ? 1 : 0), max(izq.second , dcha.second) + tree.root() }; 
     }
 }
 
 void resuelveCaso() {
-    BinTree<char> t;
+    BinTree<int> t;
     cin >> t;
     auto a = excursionistas(t); 
     cout << a.first << ' ' << a.second << '\n';
