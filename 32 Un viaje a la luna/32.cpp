@@ -1,25 +1,26 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-using namespace std; 
+using namespace std;
 
 class Persona {
-private: 
-	string nombre; 
-	int edad; 
-public: 
+private:
+    string nombre;
+    int edad;
+public:
     Persona() : nombre(""), edad(0) {}
-	Persona(const string& nombre, int edad): nombre(nombre), edad(edad) {}
-	const string& getNombre() const {
-		return nombre; 
-	}
-	int getEdad() const { return edad;  }
+    Persona(const string& nombre, int edad) : nombre(nombre), edad(edad) {}
+    const string& getNombre() const {
+        return nombre;
+    }
+    int getEdad() const { return edad; }
     void read(istream& in) {
-        in >> edad; 
-        getline(in, nombre); 
+        in >> edad;
+        in.ignore(1); 
+        getline(in, nombre);
     }
     void display(ostream& op = cout) {
-        op << edad << " " << nombre; 
+        op  << nombre;
     }
 
 
@@ -31,7 +32,7 @@ public:
 #include <cassert>
 #include <iostream>
 
-template <typename Elem> 
+template <typename Elem>
 class ListLinkedDouble {
 private:
     struct Node {
@@ -92,17 +93,17 @@ public:
 
     template <typename Predicate>
     void remove_if(Predicate pred) {
-        Node* current = head->next; 
+        Node* current = head->next;
         while (current != head) {
             Node* aux = current;
             current = current->next;
-            if (pred(current->value)) {
-                aux->prev->next = aux->next; 
-                aux->next->prev = aux->prev; 
-                aux->next = nullptr; 
-                aux->prev = nullptr; 
-                delete aux; 
-                --num_elems;                 
+            if (pred(aux->value)) {
+                aux->prev->next = aux->next;
+                aux->next->prev = aux->prev;
+                aux->next = nullptr;
+                aux->prev = nullptr;
+                delete aux;
+                --num_elems;
             }
 
         }
@@ -207,16 +208,14 @@ void ListLinkedDouble<Elem>::copy_nodes_from(const ListLinkedDouble& other) {
 
 template <typename Elem>
 void ListLinkedDouble<Elem>::display(std::ostream& out) const {
-    out << "[";
     if (head->next != head) {
-        out << head->next->value;
+        out << head->next->value <<'\n';
         Node* current = head->next->next;
         while (current != head) {
-            out << ", " << current->value;
+            out << current->value << '\n';
             current = current->next;
         }
     }
-    out << "]";
 }
 
 template <typename Elem>
@@ -226,8 +225,8 @@ std::ostream& operator<<(std::ostream& out, const ListLinkedDouble<Elem>& l) {
 }
 
 std::istream& operator >> (std::istream& in, Persona& p) {
-    p.read(in); 
-    return in; 
+    p.read(in);
+    return in;
 }
 
 std::ostream& operator << (std::ostream& op, Persona& p) {
@@ -237,25 +236,24 @@ std::ostream& operator << (std::ostream& op, Persona& p) {
 
 
 bool resuelveCasos() {
-    int n, min, max; 
-    cin >> n >> min >> max; 
-    if (n == 0 && min == 0 && max == 0) return false; 
-    ListLinkedDouble<Persona> lista; 
-  
-    Persona aux; 
+    int n, min, max;
+    cin >> n >> min >> max;
+    if (n == 0 && min == 0 && max == 0) return false;
+    ListLinkedDouble<Persona> lista;
+
+    Persona aux;
     for (int i = 0; i < n; ++i) {
-        cin >> aux; 
-        lista.push_back(aux); 
+        cin >> aux;
+        lista.push_back(aux);
     }
-    lista.remove_if([min, max](const Persona& p) {return (p.getEdad() < min || p.getEdad() > max);  }); 
-    cout << lista << '\n'; 
-    cout << "---\n"; 
-    
-    return true; 
+    lista.remove_if([min, max](const Persona& p) {return (p.getEdad() < min || p.getEdad() > max);  });
+    cout << lista;
+    cout << "---\n";
+    return true;
 }
 
 int main() {
     while (resuelveCasos());
-    return 0; 
+    return 0;
 }
 
