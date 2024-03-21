@@ -1,0 +1,4 @@
+﻿  33.cpp
+E:\PROBLEMAS DE ED\33 Reconstrucción de un árbol binario\33.cpp(155,59): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+E:\PROBLEMAS DE ED\33 Reconstrucción de un árbol binario\33.cpp(155,40): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+  33 Reconstrucción de un árbol binario.vcxproj -> E:\PROBLEMAS DE ED\33 Reconstrucción de un árbol binario\x64\Debug\33 Reconstrucción de un árbol binario.exe
