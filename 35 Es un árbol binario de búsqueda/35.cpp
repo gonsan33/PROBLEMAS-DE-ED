@@ -13,6 +13,7 @@
 #include <queue>
 #include <stack>
 #include <climits>
+#include <tuple>
 using namespace std; 
 
 template <class T> class BinTree {
@@ -180,27 +181,33 @@ std::istream& operator>>(std::istream& op, BinTree<T>& tree) {
 
 
 template <typename T>
-pair<bool,T> esDeBusquedaPrivi(const BinTree<T>& tree, const T &minType) {
-    if (tree.empty()) return { true, minType };
-    else if (tree.right().empty() && tree.left().empty()) return { true, tree.root() };
-    else if (tree.right().empty()) {
-        pair<bool, T> left = esDeBusquedaPrivi(tree.left(), minType);
-        return { left.first && left.second < tree.root(), tree.root() }; 
-    }
-
-
+tuple<bool,T,T> esDeBusquedaPrivi(const BinTree<T>& tree) { //es_abb,min,max
+    if (tree.empty()) return {true, T(), T()};
     else {
-        pair<bool, T> left = esDeBusquedaPrivi(tree.left(), minType);
-        pair<bool, T> right = esDeBusquedaPrivi(tree.right(), minType);
-        return { left.first && right.first && left.second < tree.root() && tree.root() < right.second, right.second };
+        auto [es_abbL, minL, maxL] = esDeBusquedaPrivi(tree.left()); 
+        auto [es_abbR, minR, maxR] = esDeBusquedaPrivi(tree.right());
+
+        T min = tree.left().empty() ? tree.root() : minL; 
+        T max = tree.right().empty() ? tree.root() : maxR; 
+
+        return { es_abbL && es_abbR && (tree.left().empty() ||  maxL < tree.root()) && (tree.right().empty() ||  tree.root() < minR), min, max };
     }
 }
 
 
 
 template <typename T>
-bool esDeBusqueda(const BinTree<T>& tree, const T& minType) {
-    return esDeBusquedaPrivi(tree, minType).first; 
+bool esDeBusqueda(const BinTree<T>& tree) {
+    auto [esABB, min, max] = esDeBusquedaPrivi(tree);
+    return esABB;
+}
+
+template <typename T>
+void resolver() {
+    BinTree<T> tree;
+    cin >> tree;
+    if (esDeBusqueda<T>(tree)) cout << "SI\n";
+    else cout << "NO\n";
 }
 
 bool resuelveCasos() {
@@ -208,17 +215,10 @@ bool resuelveCasos() {
     cin >> ini; 
     if (!cin) return false; 
     if (ini == 'N') {
-        BinTree<int> tree; 
-        cin >> tree; 
-        if (esDeBusqueda<int>(tree, INT_MIN)) cout << "SI\n";
-        else cout << "NO\n"; 
-        
+        resolver<int>();         
     }
     else {
-        BinTree<string> tree;
-        cin >> tree;
-        if (esDeBusqueda<string>(tree, "")) cout << "SI\n";
-        else cout << "NO\n";
+        resolver<string>();
     }
     return true; 
 }
@@ -228,4 +228,6 @@ int main() {
     return 0; 
 }
 
+//Otra opción es ver si está ordenado el inorden
+//Intentar esto con una expresión lambda
 #endif
