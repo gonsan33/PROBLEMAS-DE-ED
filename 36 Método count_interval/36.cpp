@@ -221,12 +221,22 @@ private:
 
     int count_interval(Node* root, T const& lower, T const& upper) const {
         if (root == nullptr) return 0;
-        else if (lower >  root->elem) return count_interval(root->right, lower, upper);
-        else if (upper < root->elem) return count_interval(root->left, lower, upper) ;
-        else { //lower <= root->elem <= upper
-            return count_interval(root->right, lower, upper) + count_interval(root->left, lower, upper) + 1; 
-        }
+        else if (root->elem >= upper) {
 
+            int a = count_interval(root->left, lower, upper);
+            int b = root->elem == upper;
+            return a + b;
+        }
+        else if (root->elem <= lower) {
+            int a = count_interval(root->right, lower, upper);
+            int b = root->elem == lower;
+            return a + b;
+        }
+        else {
+            int a = count_interval(root->left, lower, upper); 
+            int b = count_interval(root->right, lower, upper); 
+            return  a + b + 1; 
+        }
     }
 
 };

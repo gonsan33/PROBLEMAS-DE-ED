@@ -112,47 +112,38 @@ using namespace std;
 
 
 
-BinTree<int> reconstruir(int preordenini, int preordenfin, int inordenIni, int inordenFin, vector<int> const& preorden, vector<int> const& inorden) {
-    if (preordenini >= preordenfin || inordenIni >= inordenFin) return BinTree<int>();  //vacío 
-    //la raíz en preorden es preordenini
 
-    //localizo la raíz en el inorden: 
-    int it = inordenIni;
-    while (it <  inordenFin && inorden[it] != preorden[preordenini]) ++it;
+template <typename T> 
+BinTree<T> reconstruir(int& preOrdIni, int preOrdFin, int inOrdIni, int inOrdFin, vector<T> const& preorden, vector<T> const& inorden) {
+    if (inOrdIni >= inOrdFin) return BinTree<T>(); 
+    else {
+        T root = preorden[preOrdIni]; 
 
-    //encuentro dónde termina el preorden: 
-    int finPreordenIzq = preordenini;
-    int ultiIzq = it;
-    if (ultiIzq > inordenIni)--ultiIzq;
-    while (finPreordenIzq < preordenfin && preorden[finPreordenIzq] != inorden[ultiIzq]) ++finPreordenIzq;
-    //ha encontrado ulti, luego hay que avanzar uno más
-    ++finPreordenIzq;
+        ++preOrdIni; 
+        
+        //busco la raíz en el inorden 
+        int inOrdIzqFin = inOrdIni;
+        while (inorden[inOrdIzqFin] != root) ++inOrdIzqFin; 
 
-    //reconstruyo el hijo izquierdo: 
-    BinTree<int> left = reconstruir(preordenini+1, finPreordenIzq, inordenIni, it, preorden, inorden);
+        //en el inorden, el árbol izquierdo está entre [inOrdIzqIni, inOrdIzqFin)
 
-    //reconstruyo el hijo derecho: 
-        //el último nodo en preorden y es el mismo que en inorden. Por lo tanto, en preorden, el hijo derecho empieza justo después de aparecer el elemento que va antes que la raíz en inorden
-    
-    int inicioPreordenDcho = finPreordenIzq; 
-    /*
-    int inicioPreordenDcho = preordenini;
-    int ulti = it;
-    if (ulti> inordenIni)--ulti;
-    while (inicioPreordenDcho < preordenfin && preorden[inicioPreordenDcho] != inorden[ulti]) ++inicioPreordenDcho;
-    //ha encontrado ulti, luego hay que avanzar uno más
-    ++inicioPreordenDcho;
-    */
-    BinTree<int> right = reconstruir(inicioPreordenDcho, preordenfin, it+1, inordenFin, preorden, inorden);  //se aumenta it para no incluirlo 
+        //En el inorden, el árbol derecho está entre [inOrdIzqFin+1, inOrdFin
+  
+        int inOrdDchoIni = inOrdIzqFin +1;
 
-    return BinTree<int>(left, inorden[it], right);
+        BinTree<T> left = reconstruir(preOrdIni, preOrdFin, inOrdIni, inOrdIzqFin, preorden, inorden); 
+        BinTree<T> right = reconstruir(preOrdIni, preOrdFin, inOrdDchoIni, inOrdFin, preorden, inorden); 
+
+        return BinTree<T>(left,root,right); 
+    }
 }
 
 
 
-
-BinTree<int> reconstruir(vector<int> const& preorden, vector<int> const& inorden) {
-    return reconstruir(0, preorden.size(), 0, inorden.size(), preorden, inorden); 
+template <typename T>
+BinTree<T> reconstruir(vector<T> const& preorden, vector<T> const& inorden) {
+    int ini = 0; 
+    return reconstruir(ini, preorden.size(), 0, inorden.size(), preorden, inorden); 
 }
 
 

@@ -1,0 +1,12 @@
+﻿  37.cpp
+E:\PROBLEMAS DE ED\37 Método lower_bound\37.cpp(40,31): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  E:\PROBLEMAS DE ED\37 Método lower_bound\37.cpp(40,31):
+  el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+  	E:\PROBLEMAS DE ED\37 Método lower_bound\37.cpp(273,18):
+  	Vea la referencia a la creación de una instancia de clase plantilla "SetTree<int>" que se está compilando
+  	E:\PROBLEMAS DE ED\37 Método lower_bound\37.cpp(33,5):
+  	al compilar la función del miembro clase plantilla "SetTree<int>::SetTree(const std::vector<int,std::allocator<int>> &)"
+  		E:\PROBLEMAS DE ED\37 Método lower_bound\37.cpp(273,23):
+  		vea la primera referencia a “SetTree<int>::SetTree” en “resuelveCasos”
+  
+  37 Método lower_bound.vcxproj -> E:\PROBLEMAS DE ED\37 Método lower_bound\x64\Debug\37 Método lower_bound.exe
