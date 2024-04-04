@@ -2,6 +2,7 @@
 #include <iostream>
 #include <memory>
 using namespace std; 
+/*
 template <class T> class BinTree {
 public:
     BinTree() : root_node(nullptr) {}
@@ -130,3 +131,5 @@ int main() {
     while (resuelveCaso()); 
     return 0; 
 }
+
+*/

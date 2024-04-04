@@ -3,7 +3,7 @@
  * fugas de memoria y problemas con la destrucción.
  */
 
-
+/*
 
 #include <cassert>
 #include <iostream>
@@ -152,3 +152,5 @@ int main() {
     for (int i = 0; i < n; ++i) resuelveCaso();
     return 0;
 }
+
+*/

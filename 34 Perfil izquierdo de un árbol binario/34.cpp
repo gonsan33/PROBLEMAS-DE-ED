@@ -16,7 +16,7 @@
  Dad una explicación de la solución y justificad su coste.
  
  @ </answer> */
-
+/*
 
 #include <iostream>
 #include <fstream>
@@ -256,3 +256,5 @@ int main() {
 #endif
   return 0;
 }
+
+*/
