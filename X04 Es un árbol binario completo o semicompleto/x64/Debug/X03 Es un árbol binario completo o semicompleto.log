@@ -1,0 +1,3 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: El directorio intermedio (x64\Debug\) contiene archivos compartidos de otro proyecto (X03 Es un árbol binario completo o semicompleto.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+  X04.cpp
+  X03 Es un árbol binario completo o semicompleto.vcxproj -> C:\Users\mula03usu01\Downloads\PROBLEMAS-DE-ED\X03 Es un árbol binario completo o semicompleto\x64\Debug\X04 Es un árbol binario completo o semicompleto.exe
