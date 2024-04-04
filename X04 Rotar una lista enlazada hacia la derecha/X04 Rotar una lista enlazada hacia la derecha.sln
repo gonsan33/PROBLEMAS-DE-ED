@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X04 Rotar una lista enlazada hacia la derecha", "X04 Rotar una lista enlazada hacia la derecha.vcxproj", "{8578FC23-6D85-4627-A8AB-5BF76F1EF3EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8578FC23-6D85-4627-A8AB-5BF76F1EF3EF}.Debug|x64.ActiveCfg = Debug|x64
+		{8578FC23-6D85-4627-A8AB-5BF76F1EF3EF}.Debug|x64.Build.0 = Debug|x64
+		{8578FC23-6D85-4627-A8AB-5BF76F1EF3EF}.Debug|x86.ActiveCfg = Debug|Win32
+		{8578FC23-6D85-4627-A8AB-5BF76F1EF3EF}.Debug|x86.Build.0 = Debug|Win32
+		{8578FC23-6D85-4627-A8AB-5BF76F1EF3EF}.Release|x64.ActiveCfg = Release|x64
+		{8578FC23-6D85-4627-A8AB-5BF76F1EF3EF}.Release|x64.Build.0 = Release|x64
+		{8578FC23-6D85-4627-A8AB-5BF76F1EF3EF}.Release|x86.ActiveCfg = Release|Win32
+		{8578FC23-6D85-4627-A8AB-5BF76F1EF3EF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F136FC4C-0ECB-4327-B85F-F96FBEC0D8C9}
+	EndGlobalSection
+EndGlobal
