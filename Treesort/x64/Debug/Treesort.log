@@ -1,0 +1,7 @@
+﻿  treesort.cpp
+C:\Users\mula03usu01\Downloads\PROBLEMAS-DE-ED\Treesort\treesort.cpp(256,6): error C2182: 'tree_sort': este uso de 'void' no es válido
+C:\Users\mula03usu01\Downloads\PROBLEMAS-DE-ED\Treesort\treesort.cpp(256,16): error C2065: 'vector': identificador no declarado
+C:\Users\mula03usu01\Downloads\PROBLEMAS-DE-ED\Treesort\treesort.cpp(256,27): error C2065: 'elems': identificador no declarado
+C:\Users\mula03usu01\Downloads\PROBLEMAS-DE-ED\Treesort\treesort.cpp(256,16): error C3861: 'vector': no se encontró el identificador
+C:\Users\mula03usu01\Downloads\PROBLEMAS-DE-ED\Treesort\treesort.cpp(256,27): error C3861: 'elems': no se encontró el identificador
+C:\Users\mula03usu01\Downloads\PROBLEMAS-DE-ED\Treesort\treesort.cpp(256,1): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)

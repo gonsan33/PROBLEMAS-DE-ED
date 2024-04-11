@@ -35,11 +35,13 @@ bool resuelveCasos() {
 			string palabra;
 			ss >> palabra; 
 			tolower(palabra); 
-			if (!map.count(palabra) || map[palabra][map[palabra].size() - 1] != i + 1)  map[palabra].push_back(i + 1); 
+			vector<int>& v = map[palabra]; 
+			if (v.empty() || v.back() != i+1) v.push_back(i + 1); 
+			//if (!map.count(palabra) || map[palabra][map[palabra].size() - 1] != i + 1)  map[palabra].push_back(i + 1);  //esto está mal, map[palabra] tiene coste logarítmico, llamo varias veces...
 		}
 	}
 
-	for (auto [palabra, v] : map) {
+	for (auto const & [palabra, v] : map) { //const & es para no hacer copias del vector 
 		if (palabra.size() > 2) {
 			cout << palabra;
 			for (auto x : v) cout << " " << x;
