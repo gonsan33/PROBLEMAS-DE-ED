@@ -8,7 +8,7 @@ void resuelveCasos() {
 	int n; 
 	cin >> n; 
 	vector<int> v(n); 
-	for (auto& x : v) cin >> n; 
+	for (auto& x : v) cin >> x; 
 
 	int ini = 0; 
 	int lmax = 0; 
@@ -19,6 +19,8 @@ void resuelveCasos() {
 		if (map.count(v[i]) && map[v[i]] >= ini) {
 			ini = map[v[i]] + 1; 
 		}
+		//actualizo el mapa
+		map[v[i]] = i; 
 		lmax = max(lmax, i - ini + 1); 
 	}
 

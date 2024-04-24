@@ -1,0 +1,23 @@
+a = 2
+OK
+a = 1
+OK
+a = 2
+b = 1
+OK
+a = 3
+OK
+ERROR
+---
+vs = 2
+xs = 1
+OK
+vs = 2
+xs = 2
+OK
+vs = 20
+xs = 20
+OK
+---
+OK
+---
