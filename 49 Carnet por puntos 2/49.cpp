@@ -22,6 +22,7 @@
 #include <list>
 #include <algorithm>
 #include <map>
+#include <vector>
 #include <unordered_map>
 using namespace std;
 
@@ -40,7 +41,7 @@ public:
   void nuevo(const DNI& conductor) {//O(1)
       auto [it, nuevo] = conductores.insert({ conductor, InfoConductor(conductor,MAX_PUNTOS) }); 
       if (!nuevo) throw domain_error("Conductor duplicado"); 
-      it->second.iterador = puntos[MAX_PUNTOS].insert(puntos[MAX_PUNTOS].end(), conductor );
+      it->second.iterador = puntos[MAX_PUNTOS].insert(puntos[MAX_PUNTOS].begin(), conductor );
   }
   
   void quitar(DNI conductor, int points) { //O(1)
@@ -58,9 +59,8 @@ public:
   void recuperar(const DNI& conductor, int puntos) { //O(1)
       InfoConductor& infoConductor = buscar_conductor(conductor);
       int viejos_puntos = infoConductor.puntos; 
-      infoConductor.puntos = MAX_PUNTOS; 
-      actualizar_puntos(infoConductor, viejos_puntos, infoConductor.puntos); 
-
+      infoConductor.puntos = min(MAX_PUNTOS, infoConductor.puntos + puntos); ; 
+      if(viejos_puntos != infoConductor.puntos) actualizar_puntos(infoConductor, viejos_puntos, infoConductor.puntos); 
   }
   
   int consultar(const DNI& conductor) const {
@@ -119,7 +119,7 @@ private:
         puntos[puntos_viejos].erase(infoConductor.iterador);
 
         //lo añado a la lista nueva: 
-        infoConductor.iterador = puntos[infoConductor.puntos].insert(puntos[infoConductor.puntos].end(), infoConductor.dni);
+        infoConductor.iterador = puntos[infoConductor.puntos].insert(puntos[infoConductor.puntos].begin(), infoConductor.dni);
     }
 
 

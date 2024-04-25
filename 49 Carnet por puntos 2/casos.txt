@@ -19,4 +19,8 @@ nuevo 123A
 nuevo 123A
 cuantos_con_puntos 20
 quitar 456B 2
+nuevo 456B
+lista_por_puntos 15
+recuperar 123A 2
+lista_por_puntos 15
 FIN
