@@ -1,0 +1,54 @@
+ 6
+ nuevoLibro 20 Heidi
+ nuevoLibro 30 Caperucita roja
+ top10
+ comprar Heidi
+ numEjemplares Caperucita roja
+ top10
+ 8
+ nuevoLibro 1 La vuelta al mundo en 80 dias
+ comprar La vuelta al mundo en 80 dias
+ estaLibro La vuelta al mundo en 80 dias
+ nuevoLibro 5 Viaje al centro de la tierra
+ comprar Viaje al centro de la tierra
+ comprar Viaje al centro de la tierra
+ top10
+ comprar La isla misteriosa
+37
+nuevoLibro 2 Heidi
+comprar Heidi
+comprar Heidi
+comprar Heidi
+comprar Caperucita roja
+nuevoLibro 30 Caperucita roja
+top10
+comprar Caperucita roja
+top10
+estaLibro Heidi
+estaLibro Caperucita roja
+numEjemplares Heidi
+numEjemplares Caperucita roja
+nuevoLibro 2 Heidi
+numEjemplares Heidi
+elimLibro Caperucita roja
+estaLibro Caperucita roja
+numEjemplares Caperucita roja
+top10
+nuevoLibro 5 Los tres cerditos
+comprar Los tres cerditos
+comprar Los tres cerditos
+comprar Los tres cerditos
+comprar Los tres cerditos
+top10
+nuevoLibro 5 Cenicienta
+comprar Cenicienta
+comprar Cenicienta
+comprar Cenicienta
+comprar Cenicienta
+top10
+comprar Cenicienta
+comprar Los tres cerditos
+top10
+elimLibro Los tres cerditos
+top10
+estaLibro Los tres cerditos
