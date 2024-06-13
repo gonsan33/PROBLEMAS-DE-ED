@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13.cpp">
+    <ClCompile Include="14.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="14b.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

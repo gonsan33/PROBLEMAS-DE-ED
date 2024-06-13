@@ -1,9 +1,2 @@
 ﻿  33.cpp
-E:\PROBLEMAS DE ED\33 Reconstrucción de un árbol binario\33.cpp(146,61): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
-  E:\PROBLEMAS DE ED\33 Reconstrucción de un árbol binario\33.cpp(146,61):
-  el contexto de creación de instancias de la plantilla (el más antiguo primero) es
-  	E:\PROBLEMAS DE ED\33 Reconstrucción de un árbol binario\33.cpp(169,18):
-  	Vea la referencia a la creación de una instancia de la función plantilla "BinTree<int> reconstruir<int>(const std::vector<int,std::allocator<int>> &,const std::vector<int,std::allocator<int>> &)" que se está compilando
-  
-E:\PROBLEMAS DE ED\33 Reconstrucción de un árbol binario\33.cpp(146,42): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
   33 Reconstrucción de un árbol binario.vcxproj -> E:\PROBLEMAS DE ED\33 Reconstrucción de un árbol binario\x64\Debug\33 Reconstrucción de un árbol binario.exe

@@ -14,6 +14,7 @@
   * Esta versi�n incluye la sobrecarga de operadores <<, [] y asignaci�n.
   */
 
+/*
 #ifndef __LIST_LINKED_DOUBLE_H
 #define __LIST_LINKED_DOUBLE_H
 
@@ -223,7 +224,7 @@ void  ListLinkedDouble::swap2by2() {
         current = current->next; 
     }
     */
-
+/*
     //Nueva implementación: 
     Node* current = head->next; 
     while(current!= head && current->next != head) {
@@ -256,6 +257,8 @@ int main() {
     return 0; 
 }
 
+
 #endif
 
 
+*/

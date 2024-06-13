@@ -31,6 +31,8 @@
   Para realizar este ejercicio no es necesario modificar la clase.
  */
 
+/*
+
 template <class T> class BinTree {
 public:
     BinTree() : root_node(nullptr) {}
@@ -172,7 +174,7 @@ bool resuelveCaso() {
 }
 
 /*@ </answer> */
-
+/*
 int main() {
 #ifndef DOMJUDGE
     std::ifstream in("casos.txt");
@@ -187,3 +189,5 @@ int main() {
 #endif
     return 0;
 }
+
+*/

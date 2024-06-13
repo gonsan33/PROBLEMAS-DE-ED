@@ -19,6 +19,7 @@
  * Implementa las operaciones pedidas en el ejercicio al final de
  * este fichero, entre las etiquetas.
  */
+/*
 
 #include <iostream>
 #include <cassert>
@@ -297,3 +298,4 @@ int main() {
 
   return 0;
 }
+*/

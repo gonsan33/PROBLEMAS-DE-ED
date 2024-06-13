@@ -5,6 +5,8 @@
 #include <stack>
 using namespace std; 
 
+/*
+
 void resuelveCasos(vector<bool>const & es_primo) {
 	BinTree<int> t; 
 	t = read_tree<int>(cin); 
@@ -46,4 +48,7 @@ int main() {
 	for (int i = 0; i < n; ++i) resuelveCasos(es_primo); 
 	return 0; 
 
+
+
 }
+*/

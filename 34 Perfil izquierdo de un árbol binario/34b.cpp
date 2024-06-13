@@ -30,7 +30,7 @@
 using namespace std;
 // Clase para representar árboles binarios.
 // No es posible modificar esta clase para el problema de hoy
-
+/*
 template <class T> class BinTree {
 
 private:
@@ -259,3 +259,4 @@ int main() {
 #endif
     return 0;
 }
+*/

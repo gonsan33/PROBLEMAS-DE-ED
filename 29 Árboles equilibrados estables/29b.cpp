@@ -3,6 +3,8 @@
  * al tipo de acción que se desea realizar en cada visita.
  */
 
+
+/*
 #ifndef __BINTREE_H
 #define __BINTREE_H
 
@@ -213,3 +215,5 @@ int main() {
 }
 
 #endif
+
+*/

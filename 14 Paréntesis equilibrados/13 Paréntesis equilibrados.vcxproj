@@ -24,6 +24,7 @@
     <ProjectGuid>{0bdf6e4f-afb2-4622-8233-bd3112cda46d}</ProjectGuid>
     <RootNamespace>My13Paréntesisequilibrados</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>14 Paréntesis equilibrados</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="13.cpp" />
+    <ClCompile Include="14.cpp" />
+    <ClCompile Include="14b.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

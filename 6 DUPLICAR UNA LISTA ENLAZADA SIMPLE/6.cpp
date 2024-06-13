@@ -4,7 +4,7 @@
 #include <cassert>
 using namespace std; 
 
-
+/*
 class ListLinkedList {
 private: 
 	struct Node {
@@ -184,4 +184,5 @@ int main() {
 	for (int i = 0; i < n; ++i) resuelveCasos(); 
 	return 0; 
 }
+*/
 

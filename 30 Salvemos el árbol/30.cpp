@@ -2,6 +2,7 @@
  * Esta implementación utiliza smart pointers para prevenir
  * fugas de memoria y problemas con la destrucción.
  */
+/*
 
 #include <cassert>
 #include <iostream>
@@ -137,3 +138,4 @@ int main() {
 
 
 
+*/

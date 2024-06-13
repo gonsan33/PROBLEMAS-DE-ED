@@ -1,4 +1,5 @@
-﻿#include <iostream> 
+﻿/*
+#include <iostream> 
 #include <deque>
 #include <string>
 #include <vector>
@@ -85,6 +86,8 @@ int main() {
 
 	cout << salida;
 	*/
+/*
 	while (resuelveCasos()); 
 	return 0; 
 }
+*/

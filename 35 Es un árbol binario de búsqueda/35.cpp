@@ -2,6 +2,7 @@
  * Aquí se introducen los recorridos parametrizados con respecto
  * al tipo de acción que se desea realizar en cada visita.
  */
+/*
 
 #ifndef __BINTREE_H
 #define __BINTREE_H
@@ -231,3 +232,4 @@ int main() {
 //Otra opción es ver si está ordenado el inorden
 //Intentar esto con una expresión lambda
 #endif
+*/

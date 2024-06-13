@@ -14,6 +14,7 @@
   * Esta versi�n incluye la sobrecarga de operadores <<, [] y asignaci�n.
   */
 
+/*
 #ifndef __LIST_LINKED_DOUBLE_H
 #define __LIST_LINKED_DOUBLE_H
 
@@ -256,6 +257,7 @@ void ListLinkedDouble::zip(ListLinkedDouble& other) { //O(n+m) con n el tamaño 
 
 }
 */
+/*
 
 void ListLinkedDouble::dettach(Node* node) {
     node->prev->next = node->next;
@@ -314,6 +316,8 @@ int main() {
     return 0;
 }
 
+
 #endif
 
+*/
 

@@ -4,7 +4,7 @@
 #include <cassert>
 using namespace std;
 
-
+/*
 class ListLinkedList {
 private:
 	struct Node {
@@ -230,3 +230,4 @@ int main() {
 	return 0;
 }
 
+*/

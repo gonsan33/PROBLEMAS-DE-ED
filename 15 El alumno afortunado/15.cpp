@@ -2,7 +2,7 @@
 #include <string>
 #include <queue>
 using namespace std; 
-
+/*
 int resolver(deque<int>& q, int m) {
 
 	if (q.size() == 1) return q.front(); 
@@ -30,3 +30,4 @@ int main() {
 	while (resuelveCasos()); 
 	return 0; 
 }
+*/

@@ -20,6 +20,7 @@
  * este fichero, entre las etiquetas.
  */
 
+/*
 #include <cassert>
 #include <iostream>
 #include <fstream>
@@ -272,3 +273,4 @@ int main() {
    return 0;
 }
 
+*/

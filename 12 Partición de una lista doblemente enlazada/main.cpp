@@ -23,6 +23,7 @@
  * Implementa las operaciones pedidas en el ejercicio al final de
  * este fichero, entre las etiquetas.
  */
+/*
 
 #include <cassert>
 #include <iostream>
@@ -308,4 +309,5 @@ int main() {
   return 0;
 }
 
+*/
 

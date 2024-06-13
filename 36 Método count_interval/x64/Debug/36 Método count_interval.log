@@ -1,27 +1,12 @@
-﻿  36.cpp
-E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(40,31): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-  E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(40,31):
+﻿  36b.cpp
+E:\PROBLEMAS DE ED\36 Método count_interval\36b.cpp(31,31): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  E:\PROBLEMAS DE ED\36 Método count_interval\36b.cpp(31,31):
   el contexto de creación de instancias de la plantilla (el más antiguo primero) es
-  	E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(261,18):
+  	E:\PROBLEMAS DE ED\36 Método count_interval\36b.cpp(236,18):
   	Vea la referencia a la creación de una instancia de clase plantilla "SetTree<int>" que se está compilando
-  	E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(33,5):
+  	E:\PROBLEMAS DE ED\36 Método count_interval\36b.cpp(24,5):
   	al compilar la función del miembro clase plantilla "SetTree<int>::SetTree(const std::vector<int,std::allocator<int>> &)"
-  		E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(261,23):
+  		E:\PROBLEMAS DE ED\36 Método count_interval\36b.cpp(236,19):
   		vea la primera referencia a “SetTree<int>::SetTree” en “resuelveCasos”
   
-E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(242,98): warning C4552: "+": el resultado de la expresión no se usa
-  E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(242,98):
-  el contexto de creación de instancias de la plantilla (el más antiguo primero) es
-  	E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(222,9):
-  	al compilar la función del miembro clase plantilla "int SetTree<int>::count_interval(SetTree<int>::Node *,const T &,const T &) const"
-          with
-          [
-              T=int
-          ]
-  		E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(81,9):
-  		vea la primera referencia a “SetTree<int>::count_interval” en “SetTree<int>::count_interval”
-  		E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(265,48):
-  		vea la primera referencia a “SetTree<int>::count_interval” en “resuelveCasos”
-  
-E:\PROBLEMAS DE ED\36 Método count_interval\36.cpp(244): warning C4715: 'SetTree<int>::count_interval': no todas las rutas de acceso de control devuelven un valor
   36 Método count_interval.vcxproj -> E:\PROBLEMAS DE ED\36 Método count_interval\x64\Debug\36 Método count_interval.exe

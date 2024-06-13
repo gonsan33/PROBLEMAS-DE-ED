@@ -2,6 +2,7 @@
  * Esta implementación utiliza smart pointers para prevenir
  * fugas de memoria y problemas con la destrucción.
  */
+/*
 
 #ifndef __BINTREE_H
 #define __BINTREE_H
@@ -134,3 +135,4 @@ int main() {
 
 
 #endif
+*/

@@ -1,2 +1,549 @@
-﻿  35.cpp
-  35 Es un árbol binario de búsqueda.vcxproj -> C:\Users\mula03usu01\Downloads\PROBLEMAS-DE-ED\35 Es un árbol binario de búsqueda\x64\Debug\35 Es un árbol binario de búsqueda.exe
+﻿  35b.cpp
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,33): error C2664: 'std::tuple<bool,int,int> esDeBusqueda<int>(BinTree<int> &)': el argumento 1 no puede convertirse de 'BinTree<int>' a 'BinTree<int> &'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,55):
+  Una referencia que no es const solamente se puede enlazar a un valor L
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(243,19):
+  vea la declaración de 'esDeBusqueda'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,33):
+  al hacer coincidir la lista de argumentos '(BinTree<int>)'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,33):
+  el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(276,19):
+  	Vea la referencia a la creación de una instancia de la función plantilla "void resolver<int>(void)" que se está compilando
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(269,5):
+  	Vea la referencia a la creación de una instancia de la función plantilla "bool esDeBusquedaPubli<int>(BinTree<int> &)" que se está compilando
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(262,22):
+  	Vea la referencia a la creación de una instancia de la función plantilla "std::tuple<bool,int,int> esDeBusqueda<int>(BinTree<int> &)" que se está compilando
+  
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,33): error C2119: "<structured binding>": el tipo de "auto" no se puede deducir de un inicializador vacío
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,33): error C3617: Los inicializadores de enlaces estructurados deben ser de un tipo de clase que no es de unión o de matriz. No se permite el tipo "int"
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(248,33): error C2664: 'std::tuple<bool,int,int> esDeBusqueda<int>(BinTree<int> &)': el argumento 1 no puede convertirse de 'BinTree<int>' a 'BinTree<int> &'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(248,56):
+  Una referencia que no es const solamente se puede enlazar a un valor L
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(243,19):
+  vea la declaración de 'esDeBusqueda'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(248,33):
+  al hacer coincidir la lista de argumentos '(BinTree<int>)'
+  
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(248,33): error C2119: "<structured binding>": el tipo de "auto" no se puede deducir de un inicializador vacío
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(248,33): error C3617: Los inicializadores de enlaces estructurados deben ser de un tipo de clase que no es de unión o de matriz. No se permite el tipo "int"
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,16): error C2440: 'return': no se puede realizar la conversión de 'initializer list' a 'std::tuple<bool,int,int>'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,9):
+  'std::tuple<bool,int,int>::tuple': la función no acepta 2 argumentos
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(531,5):
+  	puede ser 'std::tuple<bool,int,int>::tuple(std::allocator_arg_t,const _Alloc &,std::pair<_First,_Second> &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(525,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::allocator_arg_t,const _Alloc &,const std::pair<_First,_Second> &)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(503,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::allocator_arg_t,const _Alloc &,std::tuple<_Types2...> &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(495,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::allocator_arg_t,const _Alloc &,const std::tuple<_Types2...> &)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(478,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::allocator_arg_t,const _Alloc &,std::tuple<bool,int,int> &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(474,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::allocator_arg_t,const _Alloc &,const std::tuple<bool,int,int> &)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(468,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::allocator_arg_t,const _Alloc &,_This2 &&,_Rest2 &&...)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(460,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::allocator_arg_t,const _Alloc &,const _This &,const int &,const int &)'
+          with
+          [
+              _This=bool
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(453,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::allocator_arg_t,const _Alloc &)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(414,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::pair<_Other1,_Other2> &&) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(408,5):
+  	o       'std::tuple<bool,int,int>::tuple(const std::pair<_Other1,_Other2> &) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(386,5):
+  	o       'std::tuple<bool,int,int>::tuple(std::tuple<_Types1...> &&) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(378,5):
+  	o       'std::tuple<bool,int,int>::tuple(const std::tuple<_Types1...> &) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(359,5):
+  	o       'std::tuple<bool,int,int>::tuple(_This2 &&,_Rest2 &&...) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(350,5):
+  	o       'std::tuple<bool,int,int>::tuple(const _This &,const int &,const int &) noexcept(<expr>)'
+          with
+          [
+              _This=bool
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(343,5):
+  	o       'std::tuple<bool,int,int>::tuple(void) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(336,5):
+  	o       'std::tuple<bool,int,int>::tuple(_Tag,const _Alloc &,_Tpl &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(333,5):
+  	o       'std::tuple<bool,int,int>::tuple(_Tag,const _Alloc &,_Tpl &&,std::integer_sequence<size_t,_Indices2...>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(327,5):
+  	o       'std::tuple<bool,int,int>::tuple(_Tag,const _Alloc &,_This2 &&,_Rest2 &&...)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(321,5):
+  	o       'std::tuple<bool,int,int>::tuple(_Tag,_Tpl &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(318,5):
+  	o       'std::tuple<bool,int,int>::tuple(_Tag,_Tpl &&,std::integer_sequence<size_t,_Indices1...>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(314,5):
+  	o       'std::tuple<bool,int,int>::tuple(_Tag,_This2 &&,_Rest2 &&...)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,9):
+  	al hacer coincidir la lista de argumentos '(int, int)'
+  
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,33): error C2664: 'std::tuple<bool,std::string,std::string> esDeBusqueda<std::string>(BinTree<std::string> &)': el argumento 1 no puede convertirse de 'BinTree<std::string>' a 'BinTree<std::string> &'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,55):
+  Una referencia que no es const solamente se puede enlazar a un valor L
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(243,19):
+  vea la declaración de 'esDeBusqueda'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,33):
+  al hacer coincidir la lista de argumentos '(BinTree<std::string>)'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(247,33):
+  el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(277,10):
+  	Vea la referencia a la creación de una instancia de la función plantilla "void resolver<std::string>(void)" que se está compilando
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(269,5):
+  	Vea la referencia a la creación de una instancia de la función plantilla "bool esDeBusquedaPubli<std::string>(BinTree<std::string> &)" que se está compilando
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(262,22):
+  	Vea la referencia a la creación de una instancia de la función plantilla "std::tuple<bool,std::string,std::string> esDeBusqueda<std::string>(BinTree<std::string> &)" que se está compilando
+  
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(248,33): error C2664: 'std::tuple<bool,std::string,std::string> esDeBusqueda<std::string>(BinTree<std::string> &)': el argumento 1 no puede convertirse de 'BinTree<std::string>' a 'BinTree<std::string> &'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(248,56):
+  Una referencia que no es const solamente se puede enlazar a un valor L
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(243,19):
+  vea la declaración de 'esDeBusqueda'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(248,33):
+  al hacer coincidir la lista de argumentos '(BinTree<std::string>)'
+  
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,56): error C2677: '<' binario: no se encontró un operador global que adopte el tipo 'const T' (o bien no existe una conversión aceptable)
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,56): error C2677:         with
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,56): error C2677:         [
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,56): error C2677:             T=std::string
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,56): error C2677:         ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\stack(184,17):
+  puede ser 'bool std::operator <(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)": no se pudo deducir el argumento plantilla para "const std::stack<_Ty,_Container> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(193,17):
+  o       'bool std::operator <(const std::queue<_Ty,_Container> &,const std::queue<_Ty,_Container> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::queue<_Ty,_Container> &,const std::queue<_Ty,_Container> &)": no se pudo deducir el argumento plantilla para "const std::queue<_Ty,_Container> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(2318,30):
+  o       'bool std::operator <(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::vector<_Ty,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\deque(1727,17):
+  o       'bool std::operator <(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::deque<_Ty,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3577,30):
+  o       'bool std::operator <(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3571,30):
+  o       'bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3513,17):
+  o       'bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1942,17):
+  o       'bool std::operator <(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1937,17):
+  o       'bool std::operator <(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1890,17):
+  o       'bool std::operator <(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5074,17):
+  o       'bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5069,17):
+  o       'bool std::operator <(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "const _Elem *const " de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5063,17):
+  o       'bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1698,27):
+  o       'bool std::operator <(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1692,27):
+  o       'bool std::operator <(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1686,27):
+  o       'bool std::operator <(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(893,27):
+  o       'bool std::operator <(const std::tuple<_Types...> &,const std::tuple<_Types...> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::tuple<_Types...> &,const std::tuple<_Types...> &)": no se pudo deducir el argumento plantilla para "const std::tuple<_Types...> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(4274,5):
+  o       'bool std::operator <(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::move_iterator<_Iter> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1706,5):
+  o       'bool std::operator <(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::reverse_iterator<_BidIt> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(513,27):
+  o       'bool std::operator <(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)": no se pudo deducir el argumento plantilla para "const std::pair<_Ty1,_Ty2> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(513,27):
+  o       'bool std::operator <(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)": no se pudo deducir el argumento plantilla para "const std::pair<_Ty1,_Ty2> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1706,5):
+  o       'bool std::operator <(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::reverse_iterator<_BidIt> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(4274,5):
+  o       'bool std::operator <(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::move_iterator<_Iter> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(893,27):
+  o       'bool std::operator <(const std::tuple<_Types...> &,const std::tuple<_Types...> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::tuple<_Types...> &,const std::tuple<_Types...> &)": no se pudo deducir el argumento plantilla para "const std::tuple<_Types...> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1686,27):
+  o       'bool std::operator <(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1692,27):
+  o       'bool std::operator <(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1698,27):
+  o       'bool std::operator <(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5063,17):
+  o       'bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5069,17):
+  o       'bool std::operator <(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "const _Elem *const " de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5074,17):
+  o       'bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1890,17):
+  o       'bool std::operator <(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1937,17):
+  o       'bool std::operator <(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1942,17):
+  o       'bool std::operator <(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3513,17):
+  o       'bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3571,30):
+  o       'bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3577,30):
+  o       'bool std::operator <(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\deque(1727,17):
+  o       'bool std::operator <(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::deque<_Ty,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(2318,30):
+  o       'bool std::operator <(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::vector<_Ty,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(193,17):
+  o       'bool std::operator <(const std::queue<_Ty,_Container> &,const std::queue<_Ty,_Container> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::queue<_Ty,_Container> &,const std::queue<_Ty,_Container> &)": no se pudo deducir el argumento plantilla para "const std::queue<_Ty,_Container> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\stack(184,17):
+  o       'bool std::operator <(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,51):
+  	"bool std::operator <(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)": no se pudo deducir el argumento plantilla para "const std::stack<_Ty,_Container> &" de "unknown-type"
+  
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,98): error C2677: '>' binario: no se encontró un operador global que adopte el tipo 'const T' (o bien no existe una conversión aceptable)
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,98): error C2677:         with
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,98): error C2677:         [
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,98): error C2677:             T=std::string
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,98): error C2677:         ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\stack(189,17):
+  puede ser 'bool std::operator >(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)": no se pudo deducir el argumento plantilla para "const std::stack<_Ty,_Container> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(198,17):
+  o       'bool std::operator >(const std::queue<_Ty,_Container> &,const std::queue<_Ty,_Container> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::queue<_Ty,_Container> &,const std::queue<_Ty,_Container> &)": no se pudo deducir el argumento plantilla para "const std::queue<_Ty,_Container> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(2345,30):
+  o       'bool std::operator >(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::vector<_Ty,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\deque(1738,17):
+  o       'bool std::operator >(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::deque<_Ty,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3598,30):
+  o       'bool std::operator >(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3593,30):
+  o       'bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3526,17):
+  o       'bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1962,17):
+  o       'bool std::operator >(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1957,17):
+  o       'bool std::operator >(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1900,17):
+  o       'bool std::operator >(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5090,17):
+  o       'bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5085,17):
+  o       'bool std::operator >(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "const _Elem *const " de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5079,17):
+  o       'bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1716,27):
+  o       'bool std::operator >(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1710,27):
+  o       'bool std::operator >(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1704,27):
+  o       'bool std::operator >(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(904,27):
+  o       'bool std::operator >(const std::tuple<_Types...> &,const std::tuple<_Types...> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::tuple<_Types...> &,const std::tuple<_Types...> &)": no se pudo deducir el argumento plantilla para "const std::tuple<_Types...> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(4288,30):
+  o       'bool std::operator >(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::move_iterator<_Iter> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1721,5):
+  o       'bool std::operator >(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::reverse_iterator<_BidIt> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(518,27):
+  o       'bool std::operator >(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)": no se pudo deducir el argumento plantilla para "const std::pair<_Ty1,_Ty2> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(518,27):
+  o       'bool std::operator >(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)": no se pudo deducir el argumento plantilla para "const std::pair<_Ty1,_Ty2> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1721,5):
+  o       'bool std::operator >(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::reverse_iterator<_BidIt> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(4288,30):
+  o       'bool std::operator >(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::move_iterator<_Iter> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(904,27):
+  o       'bool std::operator >(const std::tuple<_Types...> &,const std::tuple<_Types...> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::tuple<_Types...> &,const std::tuple<_Types...> &)": no se pudo deducir el argumento plantilla para "const std::tuple<_Types...> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1704,27):
+  o       'bool std::operator >(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1710,27):
+  o       'bool std::operator >(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(1716,27):
+  o       'bool std::operator >(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5079,17):
+  o       'bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5085,17):
+  o       'bool std::operator >(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "const _Elem *const " de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(5090,17):
+  o       'bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1900,17):
+  o       'bool std::operator >(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1957,17):
+  o       'bool std::operator >(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1962,17):
+  o       'bool std::operator >(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3526,17):
+  o       'bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3593,30):
+  o       'bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(3598,30):
+  o       'bool std::operator >(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "const T"
+          with
+          [
+              T=std::string
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\deque(1738,17):
+  o       'bool std::operator >(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::deque<_Ty,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(2345,30):
+  o       'bool std::operator >(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::vector<_Ty,_Alloc> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(198,17):
+  o       'bool std::operator >(const std::queue<_Ty,_Container> &,const std::queue<_Ty,_Container> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::queue<_Ty,_Container> &,const std::queue<_Ty,_Container> &)": no se pudo deducir el argumento plantilla para "const std::queue<_Ty,_Container> &" de "unknown-type"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\stack(189,17):
+  o       'bool std::operator >(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,93):
+  	"bool std::operator >(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)": no se pudo deducir el argumento plantilla para "const std::stack<_Ty,_Container> &" de "unknown-type"
+  
+E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,16): error C2440: 'return': no se puede realizar la conversión de 'initializer list' a 'std::tuple<bool,std::string,std::string>'
+  E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,9):
+  'std::tuple<bool,std::string,std::string>::tuple': la función no acepta 2 argumentos
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(531,5):
+  	puede ser 'std::tuple<bool,std::string,std::string>::tuple(std::allocator_arg_t,const _Alloc &,std::pair<_First,_Second> &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(525,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::allocator_arg_t,const _Alloc &,const std::pair<_First,_Second> &)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(503,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::allocator_arg_t,const _Alloc &,std::tuple<_Types2...> &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(495,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::allocator_arg_t,const _Alloc &,const std::tuple<_Types2...> &)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(478,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::allocator_arg_t,const _Alloc &,std::tuple<bool,std::string,std::string> &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(474,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::allocator_arg_t,const _Alloc &,const std::tuple<bool,std::string,std::string> &)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(468,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::allocator_arg_t,const _Alloc &,_This2 &&,_Rest2 &&...)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(460,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::allocator_arg_t,const _Alloc &,const _This &,const std::string &,const std::string &)'
+          with
+          [
+              _This=bool
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(453,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::allocator_arg_t,const _Alloc &)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(414,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::pair<_Other1,_Other2> &&) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(408,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(const std::pair<_Other1,_Other2> &) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(386,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(std::tuple<_Types1...> &&) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(378,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(const std::tuple<_Types1...> &) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(359,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(_This2 &&,_Rest2 &&...) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(350,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(const _This &,const std::string &,const std::string &) noexcept(<expr>)'
+          with
+          [
+              _This=bool
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(343,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(void) noexcept(<expr>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(336,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(_Tag,const _Alloc &,_Tpl &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(333,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(_Tag,const _Alloc &,_Tpl &&,std::integer_sequence<size_t,_Indices2...>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(327,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(_Tag,const _Alloc &,_This2 &&,_Rest2 &&...)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(321,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(_Tag,_Tpl &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(318,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(_Tag,_Tpl &&,std::integer_sequence<size_t,_Indices1...>)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(314,5):
+  	o       'std::tuple<bool,std::string,std::string>::tuple(_Tag,_This2 &&,_Rest2 &&...)'
+  	E:\PROBLEMAS DE ED\35 Es un árbol binario de búsqueda\35b.cpp(255,9):
+  	al hacer coincidir la lista de argumentos '(std::string, std::string)'
+  

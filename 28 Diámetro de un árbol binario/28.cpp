@@ -4,7 +4,7 @@
  * Cuidado: ¡Esta implementación no libera la memoria que reserva!
  */
 
-
+/*
 
 #include <cassert>
 #include <iostream>
@@ -120,3 +120,4 @@ int main() {
     for (int i = 0; i < n; ++i) resuelveCasos(); 
     return 0; 
 }
+*/

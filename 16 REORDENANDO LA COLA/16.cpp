@@ -3,7 +3,7 @@
 #include <deque>
 using namespace std; 
 
-
+/*
 bool resuelveCasos() {
 	int n; 
 	cin >> n; 
@@ -43,3 +43,4 @@ int main() {
 	while (resuelveCasos()); 
 	return 0; 
 }
+*/

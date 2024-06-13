@@ -14,6 +14,7 @@
   * Versión inicial
   */
 
+/*
 #ifndef __SET_TREE_H
 #define __SET_TREE_H
 
@@ -272,3 +273,4 @@ int main() {
 }
 
 #endif
+*/

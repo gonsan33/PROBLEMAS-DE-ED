@@ -9,6 +9,7 @@
 #include <unordered_map>
 #include <utility>
 #include <list>
+#include <fstream>
 using namespace std;
 
 
@@ -20,27 +21,86 @@ class ventaLibros {
     
 public:
     void nuevoLibro(libro x, int n) {
+        if (stock.count(x)) {
+            stock.at(x).uds += n;
+        }
+        else {
+            
+            stock.insert({ x,Info{ n,0,lista.insert(lista.end(), x) } });
+        }
+        
     }
     
     void comprar(libro x) {
+        auto it = stock.find(x); 
+        if (it == stock.end()) throw invalid_argument("Libro no existente"); 
+           if (it->second.uds == 0) throw out_of_range("No hay ejemplares"); 
 
+        it->second.uds -= 1; 
+        it->second.vendidas += 1; 
+        
+        //Ajusto la posición en la lista
+        if (it->second.it != lista.begin()) {
+            auto current = it->second.it;
+            auto prev = it->second.it;
+            --prev;
+
+            while (current != lista.begin() && stock[*prev].vendidas <= it->second.vendidas) {
+                --current;
+                if(current != lista.begin()) --prev;
+            }
+
+            //elimino de donde estaba en la lista: 
+            lista.erase(it->second.it); 
+            //inserto
+            it->second.it = lista.insert(current, x);
+        }
+       
     }
     
     bool estaLibro(libro x) const {
-
+        return stock.count(x); 
     }
     
     void elimLibro(libro x) {
-
+        if (stock.count(x)) {
+            lista.erase(stock[x].it); 
+            stock.erase(x); 
+        }
     }
     
     int numEjemplares(libro x) const {
-
+        auto it = stock.find(x);
+        if (it == stock.end()) throw invalid_argument("Libro no existente");
+        return it->second.uds; 
     }
     
     list<libro> top10() const {
+        list<libro> res; 
+        int i = 0; 
+        auto it = lista.begin(); 
+        while (it != lista.end() && i < 10 &&  stock.at(*it).vendidas > 0) {
+            res.push_back(*it); 
+            ++it; 
+            ++i; 
+        }
+        return res; 
 
     }
+
+private: 
+
+    list<libro> lista;
+    struct Info {
+        int uds; 
+        int vendidas; 
+        list<libro>::iterator it; 
+    };
+    unordered_map<libro, Info> stock;
+
+
+
+    
 };
 
 
@@ -111,16 +171,18 @@ bool resuelveCaso(){
 }
 
 int main(){
+    /*
 #ifndef DOMJUDGE
   std::ifstream in("casos.txt");
   auto cinbuf = std::cin.rdbuf(in.rdbuf());
 #endif
-
+*/
   while (resuelveCaso()) { }
-
+  /*
 #ifndef DOMJUDGE
   std::cin.rdbuf(cinbuf);
 #endif
+*/
     return 0;
 }
 

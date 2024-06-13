@@ -1,0 +1,3 @@
+﻿  plantilla3.cpp
+E:\PROBLEMAS DE ED\EXÁMENES ED\2022-2023\Junio\3 - Mayo\plantilla3.cpp(59,19): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  3 - Mayo.vcxproj -> E:\PROBLEMAS DE ED\EXÁMENES ED\2022-2023\Junio\3 - Mayo\x64\Debug\3 - Mayo.exe
